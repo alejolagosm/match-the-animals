@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1372c28c63.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>50 in 100 Front-end Challenge</title>
+    <link rel="shortcut icon" type="image/jpg" href="/dist/logoal.png" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <nav id="main-nav">
+          <img src="logoal.png" alt="My logo" id="logo" />
+          <ul>
+            <li><a href="index.html" class="current">Project</a></li>
+            <li>
+              <a
+                href="https://alejolagos.netlify.app/contact.html"
+                target="_blank"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="main-content">
+      <div class="container" id="init-container">
+        <h1>MATCH RANDOM ANIMALS</h1>
+        <p>Do you think you know all the animals?</p>
+        <p>
+          Press the button to get a random list of animals and their pictures to
+          match.
+          <br />Try to
+          guess them all at the first try!
+        </p>
+        </p>
+        <button class="btn-main" id="get-animals">
+          Get animals!
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+      <div class="container hidden" id="list-container">
+        <h1>MATCH RANDOM ANIMALS</h1>
+        <p>
+          Drag and drop each photo to match the name of the animal
+          <br />
+          If you hover over the picture you'll get a better look at it
+        </p>
+        <div class="lists">
+          <ul class="picture-li" id="picture-li"></ul>
+          <ul class="drag-li" id="drag-li"></ul>
+        </div>
+        <button class="btn-main" id="check">
+          Check order
+          <i class="far fa-check-circle"></i>
+        </button>
+      </div>
+      <div class="container hidden" id="modal-container">
+        <h1>Congrats! you won 😎😎</h1>
+        <p>Click the button to play again</p>
+        <button class="btn-dark" id="re-start">
+          Re-Start
+          <i class="fas fa-play-circle"></i>
+        </button>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="footer-content container">
+        <p>A project By: Alejo Lagos</p>
+        <p>Copyright &copy; 2022. All rights reserved</p>
+        <div class="social">
+          <a href="https://co.linkedin.com/in/alejandrolagos1" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/alejolagosm" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://codepen.io/alejolagosm" target="_blank"
+            ><i class="fab fa-codepen"></i
+          ></a>
+          <a href="https://twitter.com/alejolagos12" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
